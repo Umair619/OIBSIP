@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>To-Do App</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="typewriter" data-period="2000" data-type='[ "To-Do List! 📝"]'>
+      <span class="wrap"></span>
+    </h1>
+    
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter a new task...">
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+    
+    <div class="task-list">
+      <h3>Pending Tasks</h3>
+      <ul id="pendingTasks"></ul>
+    </div>
+    
+    <div class="task-list">
+      <h3>Completed Tasks</h3>
+      <ul id="completedTasks"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

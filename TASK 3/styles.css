@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(40, 40, 40); /* Set a black background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    background-image: url('work.gif'); /* Update with your GIF URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1; /* Adjust the opacity as needed */
+    z-index: -1; /* Place the GIF behind the content */
+}
+
+.container {
+    max-width: 1500px;
+    min-width: 500px;
+    margin: 20px auto;
+    background-color: transparent; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-list ul h2 {
+    font-size: 8px; /* Adjust the font size as needed */
+    margin: 0; /* Remove any default margin to keep it closer to the list */
+}
+
+  
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-list {
+    margin-top: 20px;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  ul h2 {
+    list-style-type: none;
+    font-size: 10px;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  li.complete {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #e0e0e0;
+  }
+  
+  button.delete-btn {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #c9302c;
+    color: #fff;
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    text-align: center; /* Add text alignment */
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+    border-right: none; /* Remove the border-right property */
+  }
+  .h2{
+    font-size: 20px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }
+  
